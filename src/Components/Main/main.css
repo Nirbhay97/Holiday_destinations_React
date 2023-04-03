@@ -1,0 +1,322 @@
+:root {
+  --secondaryColor: hsl(187, 85%, 43%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --bodyColor: rgb(240, 240, 246);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+}
+
+.filter {
+  margin-right: 8px;
+}
+
+#price {
+  padding: 5px 7px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#price:focus {
+  outline: none;
+}
+
+.mainBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 12px;
+}
+
+.secTitle {
+  flex: 1;
+}
+
+.secIcon {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.secIcon .iconfirstparent {
+  margin-right: 2rem;
+  padding: 7px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.secIcon .iconsecondparent {
+  margin-right: 2rem;
+  padding: 7px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.secIcon .icons {
+  height: 35px;
+  width: 35px;
+}
+
+.active-1 {
+  background-color: lightgray;
+}
+
+.event {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: lightgrey;
+}
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.secContent {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-right: 1rem;
+}
+.secContent .singleDestination {
+  height: 100%;
+  width: 30%;
+  display: grid;
+  row-gap: 15px;
+  border-radius: 10px;
+  align-items: center;
+  background: #c2c1c1;
+  box-shadow: 0 2px 4px rgba(120, 140, 141, 0.549);
+  overflow: hidden;
+}
+.secContent .imageDiv {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.secContent .imageDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s ease;
+}
+.secContent .imageDiv:hover img {
+  transform: scale(1.1);
+}
+.secContent .cardInfo {
+  padding: 0.8rem;
+}
+
+.tiles {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-right: 1rem;
+}
+.tiles .singleDestination {
+  height: 100%;
+  row-gap: 15px;
+  border-radius: 10px;
+  align-items: center;
+  background: #c2c1c1;
+  box-shadow: 0 2px 4px rgba(120, 140, 141, 0.549);
+  overflow: hidden;
+}
+@media only screen and (min-width: 500px) {
+  .tiles .singleDestination {
+    min-width: 90%;
+  }
+}
+@media only screen and (min-width: 670px) {
+  .tiles .singleDestination {
+    min-width: 40%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .tiles .singleDestination {
+    min-width: 25%;
+  }
+}
+.tiles .singleDestination .imageDiv {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.tiles .singleDestination .imageDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s ease;
+}
+.tiles .singleDestination .imageDiv:hover img {
+  transform: scale(1.1);
+}
+.tiles .singleDestination .cardInfo {
+  padding: 0.8rem;
+}
+
+.singleDestinationMobile {
+  display: flex;
+  min-width: 90%;
+  max-width: 90%;
+  height: 100%;
+  row-gap: 15px;
+  border-radius: 10px;
+  align-items: center;
+  background: #c2c1c1;
+  box-shadow: 0 2px 4px rgba(120, 140, 141, 0.549);
+}
+@media only screen and (max-width: 380px) {
+  .singleDestinationMobile {
+    min-width: 90%;
+  }
+}
+.singleDestinationMobile .imageDiv {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.singleDestinationMobile .imageDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s ease;
+}
+.singleDestinationMobile .imageDiv:hover img {
+  transform: scale(1.1);
+}
+.singleDestinationMobile .imageDivMobile {
+  height: 180px;
+  width: 30%;
+  overflow: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 600px) {
+  .singleDestinationMobile .imageDivMobile {
+    min-width: 200px;
+    height: 180px;
+  }
+}
+.singleDestinationMobile .imageDivMobile img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s ease;
+}
+.singleDestinationMobile .imageDivMobile:hover img {
+  transform: scale(1.1);
+}
+.singleDestinationMobile .cardInfo {
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 70%;
+}
+@media only screen and (max-width: 600px) {
+  .singleDestinationMobile .cardInfo {
+    flex-direction: column;
+  }
+}
+.singleDestinationMobile .cardInfo .card-left {
+  height: 100%;
+  flex: 1;
+}
+.singleDestinationMobile .cardInfo .card-right {
+  height: 100%;
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+  .singleDestinationMobile .cardInfo .card-right {
+    flex-direction: column;
+  }
+}
+.singleDestinationMobile .cardInfo .pricesAttributesButton {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media only screen and (max-width: 600px) {
+  .singleDestinationMobile .cardInfo .pricesAttributesButton {
+    flex-direction: row;
+  }
+}
+.singleDestinationMobile .cardInfo .pricesAttributes {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardPara {
+  color: #848484;
+  line-height: 1.3rem;
+}
+
+.cardAttributes {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.cardAttri {
+  margin-right: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #9e9e9e;
+  font-size: 12px;
+}
+
+.pricesAttributes {
+  display: flex;
+}
+
+.priceFirst {
+  margin-right: 5px;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 0.3;
+}
+
+.bd-button {
+  display: flex;
+  padding: 4px 14px;
+  border-radius: 5px;
+  background-color: #5340ff;
+  transition: all 200ms ease;
+  color: #fff;
+  text-decoration: none;
+  white-space: pre;
+  cursor: pointer;
+  width: 100%;
+  margin: 0.2rem;
+}
+
+.bd-heading {
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */
